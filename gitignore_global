@@ -1,0 +1,7 @@
+*.swp
+tags
+*.taghl
+.ropeproject
+*.pro.user
+*.pyc
+
