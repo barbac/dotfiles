@@ -14,3 +14,32 @@ setopt EXTENDEDGLOB #to be able to exclude some files
 
 # Use vi keybindings
 bindkey -v
+
+#aliases
+
+#git
+alias g='git'
+alias gs='git status'
+alias gst='git stash'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gc='git commit'
+alias gcm="git commit -m '"
+alias gca="git commit -am '"
+alias gco='git checkout'
+alias gcp='git cherry-pick'
+alias glc='git ls-files | xargs wc -l'
+alias gpo='git push origin'
+alias gl4='gl 4'
+alias gldate="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Creset %cD'"
+
+function gl() {
+    local arguments;
+    if [[ -n "$1" ]]; then
+        arguments=("-n$1" "${@:2}")
+    else
+        arguments=""
+    fi
+
+    git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit $arguments
+}
