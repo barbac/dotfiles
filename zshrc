@@ -15,6 +15,9 @@ setopt EXTENDEDGLOB #to be able to exclude some files
 # Use vi keybindings
 bindkey -v
 
+#gulp auto completion
+eval "$(gulp --completion=zsh)"
+
 #expand aliases
 globalias() {
    # if [[ $LBUFFER =~ ' [A-Z0-9]+$' ]]; then
