@@ -15,6 +15,21 @@ setopt EXTENDEDGLOB #to be able to exclude some files
 # Use vi keybindings
 bindkey -v
 
+#expand aliases
+globalias() {
+   # if [[ $LBUFFER =~ ' [A-Z0-9]+$' ]]; then
+     zle _expand_alias
+     zle expand-word
+   # fi
+   zle self-insert
+}
+zle -N globalias
+bindkey " " globalias
+# control-space to bypass completion
+bindkey "^ " magic-space
+# normal space during searches
+bindkey -M isearch " " magic-space
+
 #aliases
 
 #git
