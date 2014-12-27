@@ -18,6 +18,16 @@ bindkey -v
 #gulp auto completion
 eval "$(gulp --completion=zsh)"
 
+if [[ `uname -s` == "Darwin"  ]]; then
+    #osx stuff
+    alias ls='ls -G'
+    #homebrew path
+    export PATH="/usr/local/bin:$PATH"
+else
+    #linux stuff
+    alias ls='ls --color=auto'
+fi
+
 #expand aliases
 globalias() {
    # if [[ $LBUFFER =~ ' [A-Z0-9]+$' ]]; then
