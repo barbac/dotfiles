@@ -15,6 +15,10 @@ setopt EXTENDEDGLOB #to be able to exclude some files
 # Use vi keybindings
 bindkey -v
 
+#python
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+
 #gulp auto completion
 eval "$(gulp --completion=zsh)"
 
