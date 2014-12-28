@@ -81,6 +81,9 @@ function gl() {
     git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit $arguments
 }
 
+#colors
+alias diff='colordiff'
+
 #extra config for this machine
 if [[ -f ~/dotfiles/zsh_extra.sh ]]; then
     source ~/dotfiles/zsh_extra.sh
