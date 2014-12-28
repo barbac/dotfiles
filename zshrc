@@ -25,11 +25,13 @@ eval "$(gulp --completion=zsh)"
 if [[ `uname -s` == "Darwin"  ]]; then
     #osx stuff
     alias ls='ls -G'
+    alias ffpro='/Applications/Firefox.app/Contents/MacOS/firefox --no-remote -p'
     #homebrew path
     export PATH="/usr/local/bin:$PATH"
 else
     #linux stuff
     alias ls='ls --color=auto'
+    alias ffpro='iceweasel -no-remote -P'
 fi
 
 #personal bin dir
