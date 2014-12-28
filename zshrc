@@ -32,6 +32,9 @@ else
     alias ls='ls --color=auto'
 fi
 
+#personal bin dir
+export PATH=$PATH:~/bin
+
 #expand aliases
 globalias() {
    # if [[ $LBUFFER =~ ' [A-Z0-9]+$' ]]; then
