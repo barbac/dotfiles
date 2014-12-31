@@ -85,6 +85,15 @@ function gl() {
 #colors
 alias diff='colordiff'
 
+#tests
+
+function test_this() {
+    # BUFFER="alias testme='"$BUFFER"'"
+    BUFFER="alias testme='"$BUFFER";  if [[ '"'$?'"' -eq 0 ]] then tmux rename-window ok; else tmux rename-window err; fi'"
+}
+zle -N test_this
+bindkey 'TTT' test_this
+
 #extra config for this machine
 if [[ -f ~/dotfiles/zsh_extra.sh ]]; then
     source ~/dotfiles/zsh_extra.sh
