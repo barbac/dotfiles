@@ -72,10 +72,11 @@ alias gldate="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C
 
 function gl() {
     local arguments;
-    if [[ -n "$1" ]]; then
+    #test if it's numeric
+    if [[ "$1" = <-> ]]; then
         arguments=("-n$1" "${@:2}")
     else
-        arguments=""
+        arguments="$@"
     fi
 
     git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit $arguments
