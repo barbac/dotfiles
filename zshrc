@@ -58,8 +58,11 @@ bindkey -M isearch " " magic-space
 alias g='git'
 alias gs='git status'
 alias gst='git stash'
+alias gsp='git stash pop'
 alias gd='git diff'
 alias gdc='git diff --cached'
+alias ga='git add'
+alias gap='git add -p'
 alias gc='git commit'
 alias gcm="git commit -m '"
 alias gca="git commit -am '"
@@ -67,6 +70,9 @@ alias gco='git checkout'
 alias gcp='git cherry-pick'
 alias glc='git ls-files | xargs wc -l'
 alias gpo='git push origin'
+alias gp='git push'
+alias gf='git fetch'
+alias grh='git reset HEAD'
 alias gl4='gl 4'
 alias gldate="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Creset %cD'"
 
