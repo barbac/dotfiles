@@ -8,7 +8,7 @@
 [push]
 	default = simple
 [credential]
-	helper = cache
+	helper = cache --timeout=108000 #30 hrs
 [alias]
 	pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master;"
 [include]
