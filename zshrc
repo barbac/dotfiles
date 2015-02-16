@@ -11,6 +11,8 @@ unsetopt beep
 setopt AUTO_CD
 setopt AUTO_LIST
 setopt EXTENDEDGLOB #to be able to exclude some files
+#this prevents exiting when background process are running
+setopt CHECK_JOBS
 
 # Use vi keybindings
 bindkey -v
