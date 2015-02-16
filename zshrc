@@ -55,6 +55,7 @@ bindkey "^ " magic-space
 bindkey -M isearch " " magic-space
 
 #aliases
+alias m='make'
 
 #git
 alias g='git'
