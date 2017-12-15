@@ -8,7 +8,7 @@
 [push]
 	default = simple
 [credential]
-	helper = cache --timeout=108000 #30 hrs
+	helper = store
 [alias]
 	pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master;"
 	l = !"git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
