@@ -21,9 +21,6 @@ bindkey -v
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 
-#gulp auto completion
-eval "$(gulp --completion=zsh)"
-
 if [[ `uname -s` == "Darwin"  ]]; then
     #osx stuff
     alias ls='ls -G'
