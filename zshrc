@@ -31,6 +31,7 @@ else
     #linux stuff
     alias ls='ls --color=auto'
     alias ffpro='firefox -no-remote -P'
+    alias xcp='tmux save-buffer - | xclip -i -selection clipboard'
 fi
 
 #personal and yarn bin dir
