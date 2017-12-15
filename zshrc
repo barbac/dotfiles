@@ -32,6 +32,8 @@ else
     alias ls='ls --color=auto'
     alias ffpro='firefox -no-remote -P'
     alias xcp='tmux save-buffer - | xclip -i -selection clipboard'
+    #local python(pip)
+    export PATH="$HOME/.local/bin:$PATH"
 fi
 
 #personal and yarn bin dir
