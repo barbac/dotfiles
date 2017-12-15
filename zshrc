@@ -33,8 +33,8 @@ else
     alias ffpro='iceweasel -no-remote -P'
 fi
 
-#personal bin dir
-export PATH=$PATH:~/bin
+#personal and yarn bin dir
+export PATH=$PATH:~/bin:~/.yarn/bin
 
 #expand aliases
 globalias() {
