@@ -30,7 +30,7 @@ if [[ `uname -s` == "Darwin"  ]]; then
 else
     #linux stuff
     alias ls='ls --color=auto'
-    alias ffpro='iceweasel -no-remote -P'
+    alias ffpro='firefox -no-remote -P'
 fi
 
 #personal and yarn bin dir
