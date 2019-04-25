@@ -1,3 +1,5 @@
 --ignore-dir=bower_components
 --ignore-dir=.ropeproject
 --ignore-file=is:bundle.js
+--ignore-file=is:bundle.map.js
+--ignore-file=is:yarn.lock
