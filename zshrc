@@ -19,6 +19,10 @@ bindkey -v
 #vim as default editor
 export EDITOR=vim
 
+#press ctrl-o to accept and keep selecting
+zmodload zsh/complist
+bindkey -M menuselect '\C-o' accept-and-menu-complete
+
 #python
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
