@@ -64,7 +64,7 @@ bindkey -M isearch " " magic-space
 alias m='make'
 
 #default prettier options
-alias pr='prettier --single-quote --trailing-comma es5 --write'
+alias -g pr='prettier --write'
 
 #git
 alias g='git'
