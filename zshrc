@@ -16,6 +16,8 @@ setopt CHECK_JOBS
 
 # Use vi keybindings
 bindkey -v
+#vim as default editor
+export EDITOR=vim
 
 #python
 export WORKON_HOME=$HOME/.virtualenvs
