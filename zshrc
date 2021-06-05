@@ -108,9 +108,15 @@ alias diff='colordiff'
 function test_this() {
     # BUFFER="alias testme='"$BUFFER"'"
     BUFFER="alias testme='"$BUFFER";  if [[ '"'$?'"' -eq 0 ]] then tmux rename-window ok; else tmux rename-window err; fi'"
+    testhere
 }
 zle -N test_this
 bindkey 'TTT' test_this
+
+# alias testhere="tmux display-message -p 'let g:session=\"#S\"; let g:panel=\"#I.#P\"'"
+function testhere() {
+    tmux set-buffer "`tmux display-message -p 'let g:session="#S" | let g:panel="#I.#P"'`"
+}
 
 #extra config for this machine
 if [[ -f ~/dotfiles/zsh_extra.sh ]]; then
