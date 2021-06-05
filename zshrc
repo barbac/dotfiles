@@ -25,7 +25,7 @@ bindkey -M menuselect '\C-o' accept-and-menu-complete
 
 #python
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 
 if [[ `uname -s` == "Darwin"  ]]; then
     #osx stuff
