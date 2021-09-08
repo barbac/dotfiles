@@ -65,6 +65,7 @@ alias m='make'
 alias rm='nocorrect rm -i'
 unalias mv
 unalias cp
+alias bcnc='python -m bCNC'
 
 #default prettier options
 alias -g pr='prettier --write'
