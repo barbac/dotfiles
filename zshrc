@@ -62,6 +62,9 @@ bindkey -M isearch " " magic-space
 
 #aliases
 alias m='make'
+alias rm='nocorrect rm -i'
+unalias mv
+unalias cp
 
 #default prettier options
 alias -g pr='prettier --write'
