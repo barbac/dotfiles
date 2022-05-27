@@ -35,6 +35,7 @@ if [[ `uname -s` == "Darwin"  ]]; then
     alias ffpro='/Applications/Firefox.app/Contents/MacOS/firefox --no-remote -p'
     #homebrew path
     export PATH="/usr/local/bin:$PATH"
+    alias xcp='tmux save-buffer - | pbcopy'
 
     VIRTUALENVWRAPPER_PYTHON=`which python3`
     source /usr/local/bin/virtualenvwrapper.sh
