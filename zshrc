@@ -28,7 +28,6 @@ fpath=(~/dotfiles/completion $fpath)
 
 #python
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 
 if [[ `uname -s` == "Darwin"  ]]; then
     #osx stuff
@@ -36,6 +35,9 @@ if [[ `uname -s` == "Darwin"  ]]; then
     alias ffpro='/Applications/Firefox.app/Contents/MacOS/firefox --no-remote -p'
     #homebrew path
     export PATH="/usr/local/bin:$PATH"
+
+    VIRTUALENVWRAPPER_PYTHON=`which python3`
+    source /usr/local/bin/virtualenvwrapper.sh
 else
     #linux stuff
     alias ls='ls --color=auto'
@@ -43,6 +45,8 @@ else
     alias xcp='tmux save-buffer - | xclip -i -selection clipboard'
     #local python(pip)
     export PATH="$HOME/.local/bin:$PATH"
+
+    source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 fi
 
 #personal and yarn bin dir
