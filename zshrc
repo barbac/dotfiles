@@ -23,6 +23,9 @@ export EDITOR=vim
 zmodload zsh/complist
 bindkey -M menuselect '\C-o' accept-and-menu-complete
 
+#extra completion files
+fpath=(~/dotfiles/completion $fpath)
+
 #python
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
